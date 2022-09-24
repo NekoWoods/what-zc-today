@@ -28,16 +28,16 @@ img[3]='./assets/cy.png';
 
 function calculate(){
     if (remainder == 0){
-        //document.getElementById("zc").innerHTML=("zd"), 
+        document.title="今天什么战场？阵地", 
         document.getElementById("mainImage").src = img[0]};
     if (remainder == 1){
-        //document.getElementById("zc").innerHTML=("cf"), 
+        document.title="今天什么战场？尘封", 
         document.getElementById("mainImage").src = img[1]};
     if (remainder == 2){
-        //document.getElementById("zc").innerHTML=("sb"), 
+        document.title="今天什么战场？碎冰", 
         document.getElementById("mainImage").src = img[2]};
     if (remainder == 3){
-        //document.getElementById("zc").innerHTML=("cy"), 
+        document.title="今天什么战场？草原", 
         document.getElementById("mainImage").src = img[3]};
 }
 calculate();
