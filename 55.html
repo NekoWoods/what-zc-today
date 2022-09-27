@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>推车什么地图？</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
+  </head>
+  
+  <body onload="refresh()">
+    <main>
+        <header>
+            <img src="./assets/pageHeader.jpg">
+            <a href="./index.html">
+              <img class="switch" src="./assets/zcbutton.png">
+            </a>
+            <div style="background-color: #3b5558"><p>有事找b站@一打鲷鱼烧 | 图片来自FF14官网</p></div>
+        </header>
+
+        <div id="content">
+            <h2 id="time"></h2>
+            <h1>推车什么地图？</h1>
+            <img id="mainImage">
+    </div>
+    </main>
+
+    <script src="55.js"></script>
+    <script>
+        //refresh when it's hh:00 or hh:30 (every 30 min)
+        function refresh(){
+           var now = new Date();
+           var m = now.getMinutes();
+           var s = now.getSeconds();
+       
+           var trig = setTimeout(refresh,500);
+           if(m==0 && s==0 || m==30 && s==0){
+               location.reload();
+           }
+           }
+        </script>
+  </body>
+</html>
