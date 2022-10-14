@@ -1,7 +1,7 @@
 //https://www.freecodecamp.org/news/how-to-format-dates-in-javascript/
 
 let date_1 = new Date('09/27/2022 03:30:00'); //start date 09/27/2022 03:30:00 = feng
-let date_2 = new Date(); //now
+let date_2 = gmtTime(); //now
 
 //how many 90 minutes there are between now and the start date: days(date_1, date_2)
 const days = (date_1, date_2) =>{
@@ -14,9 +14,9 @@ const days = (date_1, date_2) =>{
 //display time, refresh every sec
 setInterval(myTimer, 1000);
 function myTimer() {
-  const d = new Date();
+  const d = gmtTime();
   document.getElementById("time").innerHTML = d.toLocaleString();
-    
+
   let add = (days(date_1, date_2) + 1) * 1000 * 60 * 90; //add 90 min to the start of this session, getting the end of this session
   let diff = date_1.getTime() + add - d.getTime(); //calculate the diff between the end of this session and current time (in ms)
   let min = Math.floor((diff / (1000 * 60))<<0);
@@ -33,13 +33,13 @@ img[2]='./assets/huo.jpg';
 
 function calculate(){
     if (remainder == 0){
-        document.title="推车什么地图？风图", 
+        document.title="推车什么地图？风图",
         document.getElementById("mainImage").src = img[0]};
     if (remainder == 1){
-        document.title="推车什么地图？学校", 
+        document.title="推车什么地图？学校",
         document.getElementById("mainImage").src = img[1]};
     if (remainder == 2){
-        document.title="推车什么地图？火图", 
+        document.title="推车什么地图？火图",
         document.getElementById("mainImage").src = img[2]};
 }
 calculate();

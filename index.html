@@ -8,7 +8,7 @@
     <title>今天什么战场？</title>
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
   </head>
-  
+
   <body onload="refresh()">
     <main>
         <header>
@@ -27,15 +27,16 @@
     </div>
     </main>
 
+    <script src="time_helper.js"></script>
     <script src="sketch.js"></script>
     <script>
         //refresh when it's 11pm
         function refresh(){
-           var now = new Date();
+           var now = gmtTime();
            var h = now.getHours();
            var m = now.getMinutes();
            var s = now.getSeconds();
-       
+
            var trig = setTimeout(refresh,500);
            if(h==23 && m==0 && s==0){
                location.reload();

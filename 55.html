@@ -8,7 +8,7 @@
     <title>推车什么地图？</title>
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
   </head>
-  
+
   <body onload="refresh()">
     <main>
         <header>
@@ -27,14 +27,15 @@
     </div>
     </main>
 
+    <script src="time_helper.js"></script>
     <script src="55.js"></script>
     <script>
         //refresh when it's hh:00 or hh:30 (every 30 min)
         function refresh(){
-           var now = new Date();
+           var now = gmtTime();
            var m = now.getMinutes();
            var s = now.getSeconds();
-       
+
            var trig = setTimeout(refresh,500);
            if(m==0 && s==0 || m==30 && s==0){
                location.reload();
