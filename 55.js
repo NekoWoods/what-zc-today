@@ -1,6 +1,6 @@
 //https://www.freecodecamp.org/news/how-to-format-dates-in-javascript/
 
-let date_1 = new Date('09/27/2022 03:30:00'); //start date 09/27/2022 03:30:00 = feng
+let date_1 = new Date('05/09/2023 20:00:00'); //start date 9 May 2023 20:00:00 = xuexiao
 let date_2 = new Date(); //now
 
 //how many 90 minutes there are between now and the start date: days(date_1, date_2)
@@ -24,22 +24,32 @@ function myTimer() {
   document.getElementById("timeLeft").innerHTML = "> 距离换图还有" + min + "分" + sec.toLocaleString("zh-CN",{minimumIntegerDigits: 2}) + "秒 <";
 }
 
-let remainder = days(date_1, date_2)%3;
+let remainder = days(date_1, date_2)%6;
 
 const img = [];
 img[0]='./assets/feng.jpg';
 img[1]='./assets/xx.jpg';
 img[2]='./assets/huo.jpg';
+img[3]='./assets/new.jpg';
 
 function calculate(){
     if (remainder == 0){
-        document.title="推车什么地图？风图", 
-        document.getElementById("mainImage").src = img[0]};
-    if (remainder == 1){
         document.title="推车什么地图？学校", 
         document.getElementById("mainImage").src = img[1]};
-    if (remainder == 2){
-        document.title="推车什么地图？火图", 
+    if (remainder == 1){
+        document.title="推车什么地图？火山", 
         document.getElementById("mainImage").src = img[2]};
+    if (remainder == 2){
+        document.title="推车什么地图？机关", 
+        document.getElementById("mainImage").src = img[3]};
+    if (remainder == 3){
+        document.title="推车什么地图？学校", 
+        document.getElementById("mainImage").src = img[1]};
+    if (remainder == 4){
+        document.title="推车什么地图？风图", 
+        document.getElementById("mainImage").src = img[0]};
+    if (remainder == 5){
+        document.title="推车什么地图？机关", 
+        document.getElementById("mainImage").src = img[3]};
 }
 calculate();
