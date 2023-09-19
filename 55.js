@@ -35,21 +35,27 @@ img[3]='./assets/new.jpg';
 function calculate(){
     if (remainder == 0){
         document.title="推车什么地图？学校", 
-        document.getElementById("mainImage").src = img[1]};
+        document.getElementById("mainImage").src = img[1],
+        document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之现在是学校啦！"};
     if (remainder == 1){
         document.title="推车什么地图？火山", 
-        document.getElementById("mainImage").src = img[2]};
+        document.getElementById("mainImage").src = img[2],
+        document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之现在是火山啦！"};
     if (remainder == 2){
         document.title="推车什么地图？机关", 
-        document.getElementById("mainImage").src = img[3]};
+        document.getElementById("mainImage").src = img[3],
+        document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之现在是机关啦！"};
     if (remainder == 3){
         document.title="推车什么地图？学校", 
-        document.getElementById("mainImage").src = img[1]};
+        document.getElementById("mainImage").src = img[1],
+        document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之现在是学校啦！"};
     if (remainder == 4){
         document.title="推车什么地图？风图", 
-        document.getElementById("mainImage").src = img[0]};
+        document.getElementById("mainImage").src = img[0],
+        document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之现在是风图啦！"};
     if (remainder == 5){
         document.title="推车什么地图？机关", 
-        document.getElementById("mainImage").src = img[3]};
+        document.getElementById("mainImage").src = img[3],
+        document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之现在是机关啦！"};
 }
 calculate();
