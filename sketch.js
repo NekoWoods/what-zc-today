@@ -29,15 +29,18 @@ function calculate(){
     if (remainder == 0){
         document.title="今天什么战场？草原", 
         document.getElementById("mainImage").src = img[0],
-        document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是草原啦！"};
+        document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是草原啦！",
+        document.getElementById("zcrotation").innerHTML = "尘封>碎冰><b>草原</b>"};
     if (remainder == 1){
         document.title="今天什么战场？尘封", 
         document.getElementById("mainImage").src = img[1],
-        document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是尘封啦！"};
+        document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是尘封啦！",
+        document.getElementById("zcrotation").innerHTML = "<b>尘封</b>>碎冰>草原"};
     if (remainder == 2){
         document.title="今天什么战场？碎冰", 
         document.getElementById("mainImage").src = img[2],
-        document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是碎冰啦！"};
+        document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是碎冰啦！",
+        document.getElementById("zcrotation").innerHTML = "尘封><b>碎冰</b>>草原"};
 
 }
 calculate();
