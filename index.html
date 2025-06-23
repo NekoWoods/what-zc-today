@@ -30,7 +30,7 @@
 
     <script src="sketch.js"></script>
     <script>
-        //refresh when it's 11pm
+        //refresh every hour
         function refresh(){
            var now = new Date();
            var h = now.getHours();
@@ -38,7 +38,7 @@
            var s = now.getSeconds();
        
            var trig = setTimeout(refresh,500);
-           if(h==23 && m==0 && s==0){
+           if(m==0 && s==0){
                location.reload();
            }
            }
