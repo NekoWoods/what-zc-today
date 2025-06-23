@@ -1,21 +1,22 @@
 //https://www.freecodecamp.org/news/how-to-format-dates-in-javascript/
 
-let date_1 = new Date('05/09/2023 20:00:00'); //start date 9 May 2023 20:00:00 = xuexiao
+let date_1 = new Date('2023-05-09T12:00:00Z'); //start date UTC+8 9 May 2023 20:00:00 = xuexiao
 let date_2 = new Date(); //now
 
 //how many 90 minutes there are between now and the start date: days(date_1, date_2)
 const days = (date_1, date_2) =>{
-    let difference = date_2.getTime() - date_1.getTime();
+    let difference = (date_2.getTime() + date_2.getTimezoneOffset() * 1000 * 60 ) - 
+                    (date_1.getTime() + date_1.getTimezoneOffset() * 1000 * 60 );
     let TotalDays = Math.floor(difference / (1000 * 60 * 90)); //89 min = zero 90 min; 91 min = one 90 min
     return TotalDays;
 }
 
 
-//display time, refresh every sec
+//display UTC+8 time, refresh every sec
 setInterval(myTimer, 1000);
 function myTimer() {
   const d = new Date();
-  document.getElementById("time").innerHTML = d.toLocaleString();
+    document.getElementById("time").innerHTML = new Date(d.getTime() + d.getTimezoneOffset() * 1000 * 60 + 1000 * 3600 * 8).toLocaleString();
     
   let add = (days(date_1, date_2) + 1) * 1000 * 60 * 90; //add 90 min to the start of this session, getting the end of this session
   let diff = date_1.getTime() + add - d.getTime(); //calculate the diff between the end of this session and current time (in ms)
