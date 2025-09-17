@@ -54,7 +54,7 @@ function calculate(){
     if (remainder == 3){
         document.title="推车什么地图？海岸", 
         document.getElementById("mainImage").src = img[5],
-        document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之现在是学校啦！",
+        document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之现在是水图啦！",
         document.getElementById("rotation").innerHTML = "学校>火山>机关><b>海岸</b>>风图>红沙"};
     if (remainder == 4){
         document.title="推车什么地图？风图", 
@@ -68,4 +68,5 @@ function calculate(){
         document.getElementById("rotation").innerHTML = "学校>火山>机关>海岸>风图><b>红沙</b>"};
 }
 calculate();
+
 
