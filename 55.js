@@ -1,6 +1,6 @@
 //https://www.freecodecamp.org/news/how-to-format-dates-in-javascript/
 
-let date_1 = new Date('2026-04-30T2:00:00Z'); //start date UTC+8 30 April 2026 10:00:00 = hai an
+let date_1 = new Date('2026-04-30T02:00:00Z'); //start date UTC+8 30 April 2026 10:00:00 = hai an
 let date_2 = new Date(); //now
 
 //how many 60 minutes there are between now and the start date: days(date_1, date_2)
