@@ -1,6 +1,6 @@
 //https://www.freecodecamp.org/news/how-to-format-dates-in-javascript/
 
-let date_1 = new Date('2026-04-27T15:00:00Z'); //start date UTC+8 2026/04/27 23:00:00 = zd
+let date_1 = new Date('2026-04-28T15:00:00Z'); //start date UTC+8 2026/04/28 23:00:00 = zd
 let date_2 = new Date(); //today
 
 //days between today and the start date: days(date_1, date_2)
