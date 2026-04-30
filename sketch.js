@@ -30,42 +30,34 @@ img[2]='./assets/work.png';
 
 function calculate(){
     if (remainder == 1){
-        document.title="今天什么战场？", 
         document.getElementById("mainImage").src = img[1],
         document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是草原啦！",
         document.getElementById("zcrotation").innerHTML = "尘封>碎冰>草原>沃刻>尘封>阵地><b>草原</b>>沃刻"};
     if (remainder == 2){
-        document.title="今天什么战场？", 
         document.getElementById("mainImage").src = img[2],
         document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是沃刻啦！",
         document.getElementById("zcrotation").innerHTML = "尘封>碎冰>草原>沃刻>尘封>阵地>草原><b>沃刻</b>"};
     if (remainder == 0){
-        document.title="今天什么战场？", 
         document.getElementById("mainImage").src = img[0],
         document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是阵地啦！",
         document.getElementById("zcrotation").innerHTML = "尘封>碎冰>草原>沃刻>尘封><b>阵地</b>>草原>沃刻"};        
     if (remainder == 3){
-        document.title="今天什么战场？", 
         document.getElementById("mainImage").src = img[3],
         document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是尘封啦！",
         document.getElementById("zcrotation").innerHTML = "<b>尘封</b>>碎冰>草原>沃刻>尘封>阵地>草原>沃刻"};
     if (remainder == 4){
-        document.title="今天什么战场？", 
         document.getElementById("mainImage").src = img[4],
         document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是碎冰啦！",
         document.getElementById("zcrotation").innerHTML = "尘封><b>碎冰</b>>草原>沃刻>尘封>阵地>草原>沃刻"};
     if (remainder == 5){
-        document.title="今天什么战场？", 
         document.getElementById("mainImage").src = img[1],
         document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是草原啦！",
         document.getElementById("zcrotation").innerHTML = "尘封>碎冰><b>草原</b>>沃刻>尘封>阵地>草原>沃刻"};
     if (remainder == 6){
-        document.title="今天什么战场？", 
         document.getElementById("mainImage").src = img[2],
         document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是沃刻啦！",
         document.getElementById("zcrotation").innerHTML = "尘封>碎冰>草原><b>沃刻</b>>尘封>阵地>草原>沃刻"};
      if (remainder == 7){
-        document.title="今天什么战场？", 
         document.getElementById("mainImage").src = img[3],
         document.getElementById("mainImage").alt = "你看到这行字因为图没显示出来 总之今天是尘封啦！",
         document.getElementById("zcrotation").innerHTML = "尘封>碎冰>草原>沃刻><b>尘封</b>>阵地>草原>沃刻"};
