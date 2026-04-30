@@ -18,11 +18,11 @@ function myTimer() {
   const d = new Date();
     document.getElementById("time").innerHTML = new Date(d.getTime() + d.getTimezoneOffset() * 1000 * 60 + 1000 * 3600 * 8).toLocaleString();
     
-  // let add = (days(date_1, date_2) + 1) * 1000 * 60 * 60; //add 60 min to the start of this session, getting the end of this session
-  // let diff = date_1.getTime() + add - d.getTime(); //calculate the diff between the end of this session and current time (in ms)
-  // let min = Math.floor((diff / (1000 * 60))<<0);
-  // let sec = Math.ceil((diff / 1000) % 60);
-  // document.getElementById("timeLeft").innerHTML = "—— 距离换图还有" + min + "分" + sec.toLocaleString("zh-CN",{minimumIntegerDigits: 2}) + "秒 ——";
+  let add = (days(date_1, date_2) + 1) * 1000 * 60 * 60; //add 60 min to the start of this session, getting the end of this session
+  let diff = date_1.getTime() + add - d.getTime(); //calculate the diff between the end of this session and current time (in ms)
+  let min = Math.floor((diff / (1000 * 60))<<0);
+  let sec = Math.ceil((diff / 1000) % 60);
+  document.getElementById("timeLeft").innerHTML = "—— 距离换图还有" + min + "分" + sec.toLocaleString("zh-CN",{minimumIntegerDigits: 2}) + "秒 ——";
 }
 
 let remainder = days(date_1, date_2)%7;
